@@ -11,7 +11,7 @@ static char *dayname(int day)
 static int firstday(int year)
 {
 	year--;
-	return (1 + year + year/4 - year/100 + year/400) % 7;
+	return (1 + year + year/4 - year/100 + year/400 - year/4000) % 7;
 }
 
 int main(int argc, char **argv)
